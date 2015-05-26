@@ -63,6 +63,7 @@ function display_sidebar() {
         ['is_page', 'catering'],
         ['is_page', 'contact'],
         ['is_page_template', 'template-custom.php'],
+        ['is_page_template', 'template-grid.php'],
         ['is_page_template', 'template-menu.php']
       ]
     );
