@@ -54,11 +54,11 @@
     </section>
 
     <section class="about-us clearfix">
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 <h2><?php the_field('about_us_tittle') ?></h2>
                 <p><?php the_field('about_us') ?></p>
             </div>
-            <div class="col-md-6 about-img">
+            <div class="col-sm-6 about-img">
                 <img class="img-responsive" src="<?php the_field('about_us_img') ?>" alt="about how on earth image">
             </div>
     </section>
