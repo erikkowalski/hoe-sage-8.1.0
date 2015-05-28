@@ -148,8 +148,22 @@ img.wp-post-image {
     color: darkorange;
 }
 
+#sidebar-home {
+    background: white;
+    padding: 5em;
+
+    .acf-rpw-block {
+        padding: 2em 0;
+    }
+}
+
 .home .main {
     padding: 0;
+    .acf-rpw-img img, .acf-rpw-time{
+        display: none;
+    }
+
+
 }
 
 p {
@@ -175,6 +189,10 @@ p {
 
 // ---- Carousel Styling
 
+.home .carousel-inner>.item>img {
+    margin-top: 0;
+}
+
 .first {
     position: relative;
 }
@@ -198,9 +216,9 @@ p {
     }
 
     h2 {
-        color: #f8941d;
+        color: #ff9d00;
         font-size: 1.2em;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.71);
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
         line-height: 1.2em;
     }
 
@@ -209,13 +227,17 @@ p {
     }
 
 
-    @media (max-width:@screen-sm-max) {
+
         .btn-lg {
+            @media (max-width:@screen-sm-max) {
             font-size: 1em;
             padding: 0.8em 2em;
             margin-top: 0.5em;
             margin-bottom: 0;
         }
+            @media (min-width:@screen-md){
+                margin-top: 0.5em;
+            }
     }
 
     @media (min-width: @screen-sm) {
@@ -274,7 +296,16 @@ p {
 
 .about-us {
     background: white;
+
 }
+.local-now {
+    @media (max-width:768px){
+        border-top: 40px solid black;
+
+     }
+}
+
+
 
 
 .about-us, .local-now {
@@ -345,6 +376,10 @@ p {
 
         }
     }
+    a {
+        display: inline-block;
+        padding-bottom:1em;
+    }
 }
 }
 
@@ -352,7 +387,7 @@ p {
     background: #e6e6e6;
     padding: 0.2em 1em;
     position: absolute;
-    top: 30%;
+    top: 28%;
     left: 20% ;
     width: 65%;
 }
@@ -392,7 +427,66 @@ p {
 
     .main {
         background: white;
+        h1,h2 {
+            font-weight: 900;
+            color: black;
+            letter-spacing: 0.02em;
+        }
+
+        p {
+            line-height: 2em;
+        }
     }
+
+    .page-header {
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid-one, .grid-two {
+        padding-top: 2em;
+
+        }
+    }
+
+.store-img {
+    @media (min-width:@screen-sm) and (max-width:@screen-md){
+    padding-top: 2em;
+    }
+}
+
+    .grid-one {
+        padding-bottom: 2em;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-top: 2em;
+    }
+
+    .grid-two {
+        padding-bottom: 2em;
+    }
+
+
+
+.bottom-content {
+    border-top: 1px solid black;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+//--------- FAQ
+
+.faqs {
+    line-height: 2em;
+    p {
+        padding-bottom: 1em;
+    }
+.page-header h1 {
+    text-align: center;
+}
+
+
 }
 
 /*--------- Menu style ----------*/
@@ -624,6 +718,23 @@ p {
         padding: 15px;
 
     }
+}
+
+// ----------- Blog!!!
+.author, .author a {
+    display: inline-block;
+    padding-right: 2em;
+    text-transform: lowercase;
+    font-size: 1em;
+}
+.published {
+    padding-right: .5em;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.entry-title a {
+    color: black;
 }
 
 

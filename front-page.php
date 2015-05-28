@@ -18,22 +18,23 @@
                         <h2> <?php the_field('slide_one_subhead_one'); ?></h2>
                         <hr/>
                         <h3> <?php the_field('slide_one_subhead_two'); ?></h3>
-                        <p><a class="btn btn-lg btn-primary" href="/framing/" role="button">View Menu</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="our-menu/lunch-menu/" role="button">View Menu</a></p>
                     </div>
                 </div>
             </div>
+            <!--
 
         <div class="item">
-            <img  src="<?php   the_field('slider_image_two'); ?>" alt="Second slide">
+            <img  src="<?php //  the_field('slider_image_two'); ?>" alt="Second slide">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1> <?php   the_field('slide_two_headline'); ?></h1>
-                        <h2> <?php  the_field('slide_two_subhead_one'); ?></h2>
+                        <h1> <?php //  the_field('slide_two_headline'); ?></h1>
+                        <h2> <?php  //the_field('slide_two_subhead_one'); ?></h2>
                         <p><a class="btn btn-lg btn-primary" href="/framing/" role="button">View Menu</a></p>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -54,19 +55,22 @@
     </section>
 
     <section class="about-us clearfix">
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <h2><?php the_field('about_us_tittle') ?></h2>
                 <p><?php the_field('about_us') ?></p>
             </div>
-            <div class="col-sm-6 about-img">
+            <div class="col-sm-6 col-md-6 about-img">
                 <img class="img-responsive" src="<?php the_field('about_us_img') ?>" alt="about how on earth image">
             </div>
+        <div class="col-sm-6 visible-sm green-peppers  about-img ">
+            <img class="img-responsive  " src="<?php the_field('local_now_img') ?>" alt="about how on earth image">
+        </div>
     </section>
     <section class="local-now clearfix">
-        <div class="col-md-6 about-img">
-            <img class="img-responsive hidden-sm hidden-xs" src="<?php the_field('local_now_img') ?>" alt="about how on earth image">
+        <div class="hidden-sm col-md-6 about-img">
+            <img class="img-responsive  hidden-xs" src="<?php the_field('local_now_img') ?>" alt="about how on earth image">
         </div>
-            <div class="col-md-6">
+            <div class="col-sm-12 col-md-6">
                 <h2><?php the_field('whats_local_now_headline') ?></h2>
                 <p><?php the_field('local_now') ?></p>
             </div>
@@ -81,7 +85,7 @@
            <div class="grey-box">
                 <h1><?php the_field('the_store_headline') ?></h1>
                 <p><?php the_field('the_store_description') ?></p>
-               <a href="<?php the_field('the_store_learn-more') ?>">Learn More</a>
+               <a href="<?php the_field('the_store_learn_more') ?>">Learn More</a>
             </div>
             <img class="img-responsive" src="<?php the_field('the_store_image') ?>" alt="picture products from store"  >
         </div>
@@ -89,7 +93,7 @@
            <div class="grey-box">
                 <h1><?php the_field('the_kitchen_headline') ?></h1>
                 <p><?php the_field('the_kitchen_description') ?></p>
-               <a href="<?php the_field('the_kitchen_learn-more') ?>">Learn More</a>
+               <a href="<?php the_field('the_kitchen_learn_more') ?>">Learn More</a>
             </div>
             <img class="img-responsive" src="<?php the_field('the_kitchen_image') ?>" alt="picture of how on earths commercial kitchen"  >
         </div>

@@ -82,4 +82,5 @@
 
 $(document).ready(function(){
     $("#sidebar-home ul li").addClass( "col-md-3 col-sm-6" );
+    $("#sidebar-home div").addClass( "clearfix" );
 });
