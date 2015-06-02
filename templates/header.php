@@ -10,6 +10,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+      <p class="visible-xs mobil-dail">508-758-1341</p>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">

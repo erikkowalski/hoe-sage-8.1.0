@@ -94,9 +94,9 @@
         <div class="hidden-sm col-md-6 about-img">
             <img class="img-responsive  hidden-xs" src="<?php the_field('local_now_img') ?>" alt="about how on earth image">
         </div>
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-6 local-now-content">
                 <h2><?php the_field('whats_local_now_headline') ?></h2>
-                <p><?php the_field('local_now') ?></p>
+                <div><?php the_field('local_now') ?></div>
             </div>
     </section>
 

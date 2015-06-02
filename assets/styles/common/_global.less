@@ -85,6 +85,13 @@ img.wp-post-image {
              }
             .navbar-brand:hover {color: #c26c06;}
         }
+
+        .mobil-dail {
+            padding-top: 1em;
+            a {
+                color:@gray-dark;
+            }
+        }
     }
 
 
@@ -324,13 +331,33 @@ p {
 
 .about-us {
     background: white;
+    @media (min-width:@screen-sm){
+        h2 {padding: 1em 0 0 1em;}
+        p {padding:0 2em 2em 2em;}
+    }
+    @media (min-width:@screen-md){
+        h2 {padding: 1em 0 0 1em}
+        p {padding:0 2em;}
+    }
 
 }
+
 .local-now {
     @media (max-width:768px){
         border-top: 40px solid black;
 
      }
+}
+
+.local-now-content {
+    @media (min-width:@screen-sm){
+        padding:2em 2.5em;
+    }
+    @media (min-width:@screen-md){
+        padding: 3em;
+    }
+
+
 }
 
 
