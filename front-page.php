@@ -100,9 +100,29 @@
             </div>
     </section>
 
-    <section class="clearfix">
-    <?php dynamic_sidebar('sidebar-home'); ?>
-    </section>
+    <section class="clearfix recent-posts">
+		 <?php //Display 3 random News Posts
+	$recent_posts_args = [
+	'posts_per_page' => 4,
+
+];
+
+
+$recent_posts = new WP_Query( $recent_posts_args ); ?>
+		 <h3>Recent Posts</h3>
+		 <aside  class="row">
+			 <?php while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); ?>
+			 <div class="col-md-3">
+				 <h4 class="entry-title"> <a href="<?php the_permalink(); ?>"><?php the_title();?> </a></h4>
+				 <div class="entry-content">
+					 <?php the_excerpt();?>
+				 </div>
+			 </div>
+			 <?php endwhile;
+wp_reset_postdata();
+			 ?>
+		 </aside>
+	</section>
 
     <section class="kitchen-store-section">
         <div class="the-store col-sm-6">
@@ -122,6 +142,8 @@
             <img class="img-responsive" src="<?php the_field('the_kitchen_image') ?>" alt="picture of how on earths commercial kitchen"  >
         </div>
     </section>
+
+
 
 
 
