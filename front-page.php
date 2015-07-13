@@ -108,7 +108,7 @@
 ];
 
 
-$recent_posts = new WP_Query( $recent_posts_args ); ?>
+$recent_posts = new \WP_Query( $recent_posts_args ); ?>
 		 <h3>Recent Posts</h3>
 		 <aside  class="row">
 			 <?php while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); ?>
