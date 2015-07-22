@@ -32,7 +32,7 @@
                 <div class="menu container">
                     <div class="carousel-caption">
                         <h1> <?php  the_field('slide_two_headline'); ?></h1>
-                        <p><a class="btn btn-lg btn-primary" href="our-menu/lunch-menu/" role="button">View Menu</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="our-menu/specials/" role="button">View Lunch Specials</a></p>
                     </div>
                 </div>
             </div>

@@ -683,6 +683,48 @@ p {
 }
 
 
+.specials .main
+
+{
+	.page-header {
+		transition: margin 2s;
+		background-image: url(../images/lobster_header-mobil.jpg);
+		margin-bottom: 7em;
+		h1 {
+			transition: padding 2s;
+			color: white;
+			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.71);
+		}
+
+
+
+		@media (min-width: 668px){
+			background-image: url(../images/lobster_header.jpg);
+			h1 {
+				font-size: 4em;
+				letter-spacing: 0.05em;
+				padding: 2em;
+			}
+
+
+		}
+
+		@media (min-width:@screen-md){
+			h1{
+				padding: 2.5em;
+			}
+		}
+
+		@media (min-width:@screen-lg){
+			h1{
+				padding: 2.2em;
+				font-size: 5.8em;
+			}
+		}
+	}
+}
+
+
 /*--------- Catering style ----------*/
 
 .catering {
